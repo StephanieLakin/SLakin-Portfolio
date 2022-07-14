@@ -1,0 +1,98 @@
+header {
+    height: 100vh;
+    padding-top: 7rem;
+    overflow: hidden;
+}
+.header_container {
+    text-align: center;
+    height: 100%;
+    position: relative;
+    align-items: 'center';
+  
+   
+  
+}
+
+.inline {
+  text-align: center; 
+  
+}
+
+
+/*--------cta-------*/
+.cta {
+margin-top: 2.5rem;
+display: flex;
+gap: 1.2rem;
+justify-content: center;
+
+}
+
+/*--------socials-------*/
+.header_socials {
+   
+    display: flex;
+    flex-direction: column;    
+    align-items: center;  
+    gap: 0.8rem ;
+    position: absolute; 
+    left: 10%;
+    bottom: 45rem; 
+    float: left;
+}
+
+.header_socials::after {
+    content:"";
+    width: 1px ;
+    height: 2rem;
+    background:var(--color-primary) ;
+    float: left;
+}
+/*--------Me-------*/
+.me {
+    background: linear-gradient(var(--color-primary), transparent);
+    width: 25rem;
+    height: 40rem;
+    position: absolute;
+    left:50%;
+    transform: translateX(-50%);
+    margin-top: 4rem;   
+    border-radius: 12rem 12rem 0 0;
+    overflow: hidden;
+    padding: 2rem .33rem .33rem .33rem;
+    display: inline;
+
+}
+/*--------scroll-------*/
+
+.scroll_down {
+  position: absolute;
+  left:80%;
+  bottom: 48rem;
+  transform: rotate(90deg);
+  font-weight: 300;
+  font-size: 0.9rem;
+  float: right;
+  
+}
+/* -------Media Quries (medium devices)------ */
+
+@media screen and (max-width: 1024px) {
+    .container {
+      width: var(--container-width-md);
+      }
+      section {
+        margin-top: 6rem;
+      }  
+  }
+  
+  /* -------Media Quries (small devices)------ */
+  
+  @media screen and (max-width: 600px) {
+    .container {
+      width: var(--container-width-sm);
+      }
+      section > h2 {
+        margin-bottom: 2rem;
+      }  
+  }
