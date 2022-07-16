@@ -1,6 +1,6 @@
 import React from "react";
 import "./header.scss";
-import LavendarMe from "../../assets/img/LavendarMe.png";
+import lavendar_pp from "../../assets/img/lavendar_pp.png";
 import CTA from "../cta/CTA";
 import HeaderSocials from "./headerSocials";
 
@@ -17,7 +17,7 @@ const Header = () => {
 
         <div className="inline">
           <div className="me">
-            <img src={LavendarMe} alt="me" />
+            <img src={lavendar_pp} alt="me" />
           </div>
 
           <div>

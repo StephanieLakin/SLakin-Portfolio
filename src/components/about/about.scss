@@ -1,17 +1,22 @@
+
+ #about {
+    margin-top: 5rem;
+  }
+
 .about_container {
     display: grid;
     grid-template-columns:35% 50%;
-    gap: 15%;
+    gap: 10%;
 }
 
 .about_me {
 width: 105%;
-aspect-ratio: 2/1;
+aspect-ratio: 2/1.5;
 border-radius: 2rem;
 background: linear-gradient(
     45deg,
      transparent,
-      var(--color-primary),
+      var(--color-primary-variant),
       transparent
       );
 display: grid;  
@@ -24,9 +29,13 @@ place-items: center;
     transform: rotate(15deg); 
     width: fit-content;
     position: relative;
-    top: 50px;
-    background-color: var(--color-primary);
+    top: .25rem;
+    background-color: var(--color-primary-variant);
     height: fit-content;
+    background-image: url("https://www.transparenttextures.com/patterns/dark-brick-wall.png");
+
+        opacity: 0.9;
+        filter: alpha(opacity=90);
     
 }
 .about_me-image:hover {
@@ -37,12 +46,14 @@ place-items: center;
     grid-template-columns: repeat(3,1fr);
     gap: 1.5rem;
 }
+//--- cards
  article {  
-   background: var(--color-bg-varient);
+   background: var(--color-bg-variant);
    border: 1px solid transparent;
    border-radius: 1rem;
    padding: 2rem;
    text-align: center; 
+//    background-image: url("https://www.transparenttextures.com/patterns/dark-brick-wall.png");
 }
 
 article:hover {
@@ -57,4 +68,67 @@ article:hover {
 }
 .about_card h5 {
     font-size: 0.9rem;
+}
+.about_card small {
+    font-size: 0.7rem;
+    color: var(--color-light);
+}
+.about_content p {
+    margin: 2rem 0 2.6rem;
+    color: var(--color-light);
+}
+
+/*--------Media Queries (medium)---------*/
+@media screen and (max-width: 1024px) {
+    .about_container {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+    .about_me {
+        width: 50%;
+        margin: 2rem auto 5rem;
+        aspect-ratio: 1/.75;
+    }
+    .about_me-image {
+        width: 100%;
+        margin: 0 auto 2rem;
+        top: 16px;
+    }
+    .about_content {
+        margin: 1rem 0 1.5rem;
+    }
+    
+}
+
+/*--------Media Queries (small)---------*/
+
+@media screen and (max-width: 600px) {
+    .about_container {
+        grid-template-columns: 1fr;
+    }
+    .about_me {
+        width: 55%;
+        margin: 0 auto 2rem;
+       
+     
+       
+    }
+    .about_me-image {
+        width: 100%;
+        margin: 0 auto 2rem;
+        top: 15px;
+    }
+
+    .about_cards {
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        margin-top: 2rem;
+    }
+    .about_content {
+        text-align: center;
+    }
+    .about_content p {
+        margin: 1.5rem 0 ;
+    }
+    
 }

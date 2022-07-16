@@ -1,7 +1,8 @@
 header {
-    height: 100vh;
+    height: 70vh;
     padding-top: 7rem;
     overflow: hidden;
+    padding-bottom: 0;
 }
 .header_container {
     text-align: center;
@@ -37,20 +38,21 @@ justify-content: center;
     gap: 0.8rem ;
     position: absolute; 
     left: 10%;
-    bottom: 45rem; 
+    bottom: 48rem; 
     float: left;
 }
 
-.header_socials::after {
-    content:"";
-    width: 1px ;
-    height: 2rem;
-    background:var(--color-primary) ;
-    float: left;
-}
+// .header_socials::after {
+//     content:"";
+//     width: 1px ;
+//     height: 2rem;
+//     background:var(--color-primary) ;
+//     float: left;
+//}
 /*--------Me-------*/
 .me {
-    background: linear-gradient(var(--color-primary), transparent);
+    background: linear-gradient( 45deg,
+    transparent,var(--color-primary-variant), transparent);
     width: 25rem;
     height: 40rem;
     position: absolute;
@@ -59,16 +61,22 @@ justify-content: center;
     margin-top: 4rem;   
     border-radius: 12rem 12rem 0 0;
     overflow: hidden;
-    padding: 2rem .33rem .33rem .33rem;
+    padding: 3rem .33rem .33rem .33rem;
     display: inline;
 
+}
+
+.me img {
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+  background-image: url("https://www.transparenttextures.com/patterns/dark-brick-wall.png");
 }
 /*--------scroll-------*/
 
 .scroll_down {
   position: absolute;
   left:80%;
-  bottom: 48rem;
+  bottom: 50rem;
   transform: rotate(90deg);
   font-weight: 300;
   font-size: 0.9rem;
@@ -83,6 +91,7 @@ justify-content: center;
       }
       section {
         margin-top: 6rem;
+      
       }  
   }
   
@@ -93,6 +102,6 @@ justify-content: center;
       width: var(--container-width-sm);
       }
       section > h2 {
-        margin-bottom: 2rem;
+        margin-bottom: 12rem;
       }  
   }
