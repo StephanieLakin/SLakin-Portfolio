@@ -1,6 +1,10 @@
 
  #about {
-    margin-top: 5rem;
+    height:60vh;
+    padding-top: 7rem;
+    overflow: hidden;
+    padding-bottom: 0;
+    margin: 3rem auto;
   }
 
 .about_container {
@@ -47,7 +51,7 @@ place-items: center;
     gap: 1.5rem;
 }
 //--- cards
- article {  
+ #about article {  
    background: var(--color-bg-variant);
    border: 1px solid transparent;
    border-radius: 1rem;
@@ -56,7 +60,7 @@ place-items: center;
 //    background-image: url("https://www.transparenttextures.com/patterns/dark-brick-wall.png");
 }
 
-article:hover {
+#about article:hover {
     background: transparent;
     border-color: var(--color-bg-varient);
     cursor: default;
@@ -108,11 +112,14 @@ article:hover {
     }
     .about_me {
         width: 55%;
-        margin: 0 auto 2rem;
-       
-     
+        margin: 0 auto 2rem;   
        
     }
+       #about section > h2 {
+        margin-bottom: 12rem;
+      }  
+
+
     .about_me-image {
         width: 100%;
         margin: 0 auto 2rem;

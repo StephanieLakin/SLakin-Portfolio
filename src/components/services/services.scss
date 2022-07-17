@@ -1,0 +1,14 @@
+#services {
+    height:60vh;
+    padding-top: 0rem;
+    overflow: hidden;
+    padding-bottom: 0;
+    margin: 3rem auto;
+  }
+
+  .container_services {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+
+}

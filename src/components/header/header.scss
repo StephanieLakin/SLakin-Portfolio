@@ -1,8 +1,9 @@
 header {
-    height: 70vh;
-    padding-top: 7rem;
+    height:70vh;
+    padding-top: 3rem;
     overflow: hidden;
-    padding-bottom: 0;
+    padding-bottom: 3rem;
+    margin: 5rem auto;
 }
 .header_container {
     text-align: center;
@@ -101,7 +102,7 @@ justify-content: center;
     .container {
       width: var(--container-width-sm);
       }
-      section > h2 {
-        margin-bottom: 12rem;
-      }  
+      // section > h2 {
+      //   margin-bottom: 6rem;
+      // }  
   }
