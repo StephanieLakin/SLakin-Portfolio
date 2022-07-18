@@ -24,7 +24,7 @@ background: linear-gradient(
       transparent
       );
 display: grid;  
-place-items: center;
+// place-items: center;
 }
 
 .about_me-image {
@@ -48,7 +48,7 @@ place-items: center;
 .about_cards {
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    gap: 1.5rem;
+    gap: 1.5rem;    
 }
 //--- cards
  #about article {  
@@ -68,7 +68,10 @@ place-items: center;
 .about_icon {
     color: var(--color-primary);
     font-size: 1.4rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+    left: 33%;
+ 
 }
 .about_card h5 {
     font-size: 0.9rem;
@@ -83,7 +86,11 @@ place-items: center;
 }
 
 /*--------Media Queries (medium)---------*/
+
 @media screen and (max-width: 1024px) {
+    #about {
+        height: fit-content;
+    }
     .about_container {
         grid-template-columns: 1fr;
         gap: 0;
@@ -107,6 +114,10 @@ place-items: center;
 /*--------Media Queries (small)---------*/
 
 @media screen and (max-width: 600px) {
+
+    #about {
+        height: fit-content;
+    }
     .about_container {
         grid-template-columns: 1fr;
     }

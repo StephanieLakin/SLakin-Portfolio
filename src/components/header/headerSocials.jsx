@@ -8,7 +8,7 @@ const HeaderSocials = () => {
   return (
     <div className="header_socials">
       <a
-        href="www.linkedin.com/in/stephaniejlakin"
+        href="https://www.linkedin.com/in/stephaniejlakin/"
         target="_blank"
         rel="noreferrer"
       >
@@ -21,7 +21,11 @@ const HeaderSocials = () => {
       >
         <FaGithub />
       </a>
-      <a href="www.linkedin.com/in/stephaniejlakin" target="_blank">
+      <a
+        href="https://www.linkedin.com/in/stephaniejlakin/"
+        target="_blank"
+        rel="noreferrer"
+      >
         <FiDribbble />
       </a>
     </div>
