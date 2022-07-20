@@ -10,25 +10,19 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs
-      .sendForm(
-        "YOUR_SERVICE_ID",
-        "YOUR_TEMPLATE_ID",
-        form.current,
-        "YOUR_PUBLIC_KEY"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
+    emailjs.sendForm(
+      "service_qqhth2j",
+      "template_1xv0y6n",
+      form.current,
+      "8jMUYRYfIGn_kmzkU"
+    );
+    e.target.reset();
   };
 
   return (
     <section id="contact">
+      <h5>Drop Me Line</h5>
+      <h2>Contact</h2>
       <div className="container contact_container">
         <div className="contact_options">
           <article className="contact_option">
@@ -53,7 +47,7 @@ const Contact = () => {
           </article>
         </div>
         {/* end of options */}
-        <form action="">
+        <form ref={form} onSubmit={sendEmail}>
           <input type="text" name="name" placeholder="Full Name" required />
           <input type="email" name="email" placeholder="Your Email" required />
           <textarea

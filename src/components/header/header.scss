@@ -81,8 +81,7 @@ justify-content: center;
   transform: rotate(90deg);
   font-weight: 300;
   font-size: 0.9rem;
-  float: right;
-  
+  float: right;  
 }
 /* -------Media Quries (medium devices)------ */
 
@@ -102,7 +101,28 @@ justify-content: center;
     .container {
       width: var(--container-width-sm);
       }
-      // section > h2 {
-      //   margin-bottom: 6rem;
-      // }  
+
+      header {
+        height:105vh;
+        padding-top: 0rem;
+        overflow: hidden;
+        padding-bottom: 3rem;
+        margin: 3rem 1.2rem;
+    }
+    .scroll_down {
+      position: absolute;
+      left:80%;
+      top: 50rem;
+      transform: rotate(90deg);
+      font-weight: 300;
+      font-size: 0.9rem;
+      float: right;  
+      color: var(--color-white);
+    }
+    .header_socials {  
+      position: absolute; 
+      left: 10%;
+      top: 50rem; 
+      color: var(--color-white);
+  }
   }

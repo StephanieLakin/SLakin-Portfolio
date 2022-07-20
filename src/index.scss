@@ -28,7 +28,7 @@
 
   --container-width-lg: 75%;
   --container-width-md: 86%;
-  --container-width-sm: 90%;
+  --container-width-sm: 80%;
 
   --transition: all 400ms ease;
 }
@@ -74,7 +74,7 @@ section {
 
 
 
-section > h2,section > h5 {
+section > h2, section > h5 {
 text-align: center;
 color: var(--color-light);
 }

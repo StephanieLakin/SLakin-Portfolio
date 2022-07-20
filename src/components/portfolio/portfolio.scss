@@ -24,6 +24,11 @@ width:20%;
 height:auto;
 }
 
+.portfolio_item-icon {
+    font-size: 1rem;   
+    margin: 0.2rem auto;
+}
+
 .portfolio_item:hover {
     border-color: var(--color-primary-variant);
     background: transparent;
@@ -65,12 +70,23 @@ display: none;
 }
 
 @media screen and (max-width: 600px) {
+
     .portfolio_container {
         grid-template-columns: 1fr;
-        gap: 1rem;        
+        gap: 2rem;
+        justify-content: center;
+        width: 100%;
     }
-    div > article > h3 {
 
-        display: none;
-        }
+    a .btn.btn-primary {
+        width: 100%;
+    }
+
+    #Portfolio > div > article > a.btn.btn-primary {
+    justify-content: center;    
+    }
+
+    div > article > h3 {
+    font-size: .9rem;
+    }
 }

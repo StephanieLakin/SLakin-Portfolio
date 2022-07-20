@@ -67,17 +67,29 @@
 /*--------Media Queries (small)---------*/
 
 @media screen and (max-width: 600px) {
+
+    #Experience {
+        height: 130vh;;
+    }
     .experience_container {
         grid-template-columns: 1fr;
-        gap: 1rem;
+        gap: 2rem;
+        
     }    
 
     #Experience > div.experience_container > div {
         width: 100%;
-        padding: 2rem 1rem;
+        padding: 2rem 1.75rem;
         margin: 0 auto;
     }
     .experience_content {
         padding: 2rem 1rem;
+    }
+
+    .experience_details {
+        display: flex;
+        gap: 1rem;
+        font-size: 0.8rem;
+        word-wrap: break-word;
     }
 }

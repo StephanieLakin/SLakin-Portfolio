@@ -33,6 +33,18 @@ nav a :active{
     color: var(--color-light);
 }
 
-
+@media screen and (max-width: 600px) {
+    nav {
+        position: fixed;
+        left:50%;
+        transform: translateX(-50%);
+        bottom: 2rem;
+        display: flex;
+        gap: 0.8rem;
+        border-radius: 3rem;
+        backdrop-filter: blur(15px); 
+        bottom: 55%;
+    }
+}
 
 

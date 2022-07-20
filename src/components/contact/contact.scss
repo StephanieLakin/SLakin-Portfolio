@@ -49,6 +49,7 @@ form {
     display: flex;
     flex-direction: column;
     gap: 1.2rem;
+    margin: 2rem 0;
 }
 
 input, textarea {
@@ -64,11 +65,20 @@ input, textarea {
 @media screen and (max-width: 1024px) {
     .container.contact_container {
         grid-template-columns: 1fr;
-        gap: 2rem;
+        gap: 2rem;       
     }
 }
     @media screen and (max-width: 600px) {
-        .container.contact_container {
-          width: var(--container-woidth-sm);
+       #contact {
+          width: 100vw;
+          height: 100vh;
+          padding-top: 1.2rem;
         }
+        .container.contact_container {
+            display:block;
+            height: 100vh;
+            grid-template-columns: 1fr;
+            gap: 2rem;           
+        }
+     
 }
